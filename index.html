@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sevenday — web design & development, shipped in a week</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav><b>Sevenday</b><div class="mono"><a href="#work">Work</a><a href="#week">The week</a><a href="#scope">Scope</a><a href="#contact">Start</a></div></nav>
+
+<div class="wrap">
+<header class="hero">
+<h1>Your website, designed and built in <em>seven days.</em></h1>
+<div>
+<p>One designer-developer, one fixed scope, one week. You get a live site, not a deck about one.</p>
+<a class="btn" href="#contact">Book a start date →</a>
+</div>
+</header>
+<div class="ticker mono"><span>Design</span><span>React / Next.js</span><span>CMS setup</span><span>SEO basics</span><span>Launch + handover</span></div>
+</div>
+
+<section id="work" aria-label="Selected work">
+<div id="stage" tabindex="0" role="listbox" aria-label="Concept projects">
+<div id="wheel"></div>
+</div>
+<div id="lbl">Concept work</div>
+<div id="ttl"></div>
+<ol id="idx"></ol>
+<div class="hint mono">Scroll, drag or ↑ ↓ · click the front card to see its plan</div>
+</section>
+
+<div class="wrap">
+<section class="pad" id="week">
+<span class="mono">The method</span>
+<h2>Seven days, no surprises.</h2><p id="wkfor" class="mono" style="color:var(--acc);margin:0;min-height:1.2em"></p>
+<div class="days">
+<div class="day"><span class="mono">Mon</span><h3>Brief & sitemap</h3><p>A 60-minute call, then a locked scope, page list and content checklist by evening.</p></div>
+<div class="day"><span class="mono">Tue</span><h3>Look & feel</h3><p>Type, colour and one key screen. You react once; we pick a direction.</p></div>
+<div class="day"><span class="mono">Wed</span><h3>Design, all pages</h3><p>Every page designed on desktop and mobile, using your real copy where possible.</p></div>
+<div class="day"><span class="mono">Thu</span><h3>Build</h3><p>Components, layouts, responsive behaviour and the CMS wired up.</p></div>
+<div class="day"><span class="mono">Fri</span><h3>Build & content</h3><p>Forms, analytics, performance, accessibility pass, your content dropped in.</p></div>
+<div class="day"><span class="mono">Sat</span><h3>Review</h3><p>A private staging link. One consolidated round of feedback.</p></div>
+<div class="day"><span class="mono">Sun</span><h3>Launch</h3><p>Domain, hosting, redirects, go live, and a short video on running it yourself.</p></div>
+</div>
+</section>
+
+<section class="pad" id="scope" style="padding-top:0">
+<span class="mono">Fixed scope</span>
+<h2>Pick a size. The price doesn't move.</h2>
+<div class="plans">
+<div class="plan" id="pl0"><span class="mono">Landing</span><h3>One page</h3><div class="pr">$2,400</div><ul><li>Custom design</li><li>Responsive build</li><li>Contact form</li><li>Launch in 7 days</li></ul></div>
+<div class="plan" id="pl1"><span class="mono">Studio</span><h3>Up to 5 pages</h3><div class="pr">$4,800</div><ul><li>Everything in Landing</li><li>CMS you can edit</li><li>SEO + analytics</li><li>30 days of fixes</li></ul></div>
+<div class="plan" id="pl2"><span class="mono">Product</span><h3>Small app or shop</h3><div class="pr">$7,500</div><ul><li>Everything in Studio</li><li>Auth or checkout</li><li>Integrations</li><li>60 days of fixes</li></ul></div>
+</div>
+<p style="color:var(--mut);margin-top:1rem">Anything that doesn't fit in a week gets split into phases, never rushed. Need something in between? Ask for a quote.</p>
+</section>
+</div>
+
+<div class="wrap"><section class="pad" id="faq" style="padding-top:0"><span class="mono">Questions</span><h2>Before you book.</h2><div class="days">
+<details class="day"><summary><h3 style="display:inline">What do I need to provide?</h3></summary><p>Your copy, logo and any photos by Monday evening. No copy yet? I'll write a first draft from the call.</p></details>
+<details class="day"><summary><h3 style="display:inline">What if I want changes?</h3></summary><p>One consolidated round on Saturday is included. Extra rounds are billed hourly.</p></details>
+<details class="day"><summary><h3 style="display:inline">Who owns the site?</h3></summary><p>You do: code, design files, domain and hosting accounts are all in your name at handover.</p></details>
+<details class="day"><summary><h3 style="display:inline">How do I pay?</h3></summary><p>50% to reserve the week, 50% at launch.</p></details>
+</div></section></div>
+<footer class="wrap" id="contact">
+<span class="mono">Next open week: Monday</span>
+<h2 id="cth">Have a site that should already exist?</h2>
+<form id="f" style="display:grid;gap:.8rem;max-width:34rem;margin:1.5rem 0">
+<input required id="nm" placeholder="Your name" autocomplete="name">
+<input required id="em" type="email" placeholder="Your email" autocomplete="email">
+<select id="pk"><option>Landing (one page)</option><option>Studio (up to 5 pages)</option><option>Product (app or shop)</option><option>Not sure yet</option></select>
+<textarea required id="brief" rows="4" placeholder="What are we building, and by when?"></textarea>
+<button class="btn" style="border:0;cursor:pointer;justify-self:start">Send brief →</button></form>
+<style>#f input,#f select,#f textarea{font:inherit;color:var(--fg);background:transparent;border:1px solid var(--fg);padding:.75rem;border-radius:0;width:100%}#f :focus-visible{outline:2px solid var(--acc)}summary{cursor:pointer}details.day{display:block}details p{margin-top:.6rem}</style>
+<span class="mono" style="color:var(--mut)">© 2026 Sevenday</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
